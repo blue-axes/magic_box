@@ -1,0 +1,4 @@
+*.exe
+magic_box.log*
+vendor
+

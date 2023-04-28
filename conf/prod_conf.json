@@ -1,0 +1,39 @@
+{
+    "http": {
+        "addr": "0.0.0.0",
+        "port": 80
+    },
+    "database": {
+        "schema": "postgres",
+        "addr": "192.168.209.128",
+        "port": 5432,
+        "ssl": false,
+        "username": "boxer",
+        "password": "box_magic",
+        "database": "magic_box",
+        "charset": "utf8",
+        "debug": true,
+
+        "max_conn_limit": 5,
+        "idle_conn_limit": 3,
+        "max_idle_timeout_second": 60,
+        "timeout_second": 30
+
+    },
+    "system_conf": {
+        "log_level": "info",
+        "log_filename": "magic_box.log",
+        "log_file_max_size_byte": 1024,
+        "log_file_count": 5
+    },
+    "init_data": {
+        "authentications": [
+            {
+                "username": "super",
+                "name": "super",
+                "password": "123456"
+            }
+        ]
+
+    }
+}
